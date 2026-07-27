@@ -16,7 +16,7 @@ This repository contains the final source code and documentation for my Industri
 **Kuldeep Prajapati**
 
 - 🎓 B.Tech Computer Science & Engineering
-- 📧 Email: your-email@example.com
+- 📧 Email: kuldeepp95in@gmail.com
 - 🔗 LinkedIn: https://www.linkedin.com/in/kuldeep-prajapati-a929a32ab/
 - 💻 GitHub: https://github.com/kuldeepin3
 
