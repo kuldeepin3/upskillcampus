@@ -27,9 +27,9 @@ This repository contains the final source code and documentation for my Industri
 ```
 upSkillCampus/
 │
-├── Smart City Traffic Patterns Forecasting/
+├── smart_city_traffic_forecasting/
 │
-├── Crop & Weed Detection using YOLO/
+├── crop_weed_detection/
 │
 ├── Internship_Report_KuldeepPrajapati.pdf
 │
@@ -107,7 +107,7 @@ The repository also includes the complete internship report containing:
 ## Smart City Traffic Forecasting
 
 ```bash
-cd "Smart City Traffic Patterns Forecasting"
+cd smart_city_traffic_forecasting
 pip install -r requirements.txt
 streamlit run app.py
 ```
@@ -117,7 +117,7 @@ streamlit run app.py
 ## Crop & Weed Detection
 
 ```bash
-cd "Crop & Weed Detection using YOLO"
+cd crop_weed_detection
 pip install -r requirements.txt
 streamlit run app.py
 ```
