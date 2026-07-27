@@ -31,7 +31,7 @@ upSkillCampus/
 │
 ├── crop_weed_detection/
 │
-├── Internship_Report_KuldeepPrajapati.pdf
+├── Internship_Report_KuldeepPrajapati_USC_UCT.pdf
 │
 └── README.md
 ```
