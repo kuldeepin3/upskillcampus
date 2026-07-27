@@ -16,18 +16,27 @@ st.set_page_config(
 )
 
 # -----------------------------
-# Download & Load Model
+# Download & Load Model (Cached & Memory-Mapped)
 # -----------------------------
 MODEL_PATH = "traffic_prediction_model.pkl"
 
-if not os.path.exists(MODEL_PATH):
-    FILE_ID = "16gHaTNPQfkmmU5-XvGR8_UmgGNl5uodd"
-    URL = f"https://drive.google.com/uc?id={FILE_ID}"
+@st.cache_resource
+def load_model(path):
+    if not os.path.exists(path):
+        FILE_ID = "16gHaTNPQfkmmU5-XvGR8_UmgGNl5uodd"
+        URL = f"https://drive.google.com/uc?id={FILE_ID}"
+        # Download the model
+        gdown.download(URL, path, quiet=False)
+    
+    # Load using memory mapping to prevent Out-Of-Memory (OOM) on Streamlit Cloud
+    try:
+        loaded_model = joblib.load(path, mmap_mode="r")
+    except Exception:
+        loaded_model = joblib.load(path)
+    return loaded_model
 
-    with st.spinner("Downloading trained model... Please wait."):
-        gdown.download(URL, MODEL_PATH, quiet=False)
-
-model = joblib.load(MODEL_PATH)
+with st.spinner("Downloading and loading trained model... Please wait."):
+    model = load_model(MODEL_PATH)
 
 # -----------------------------
 # Custom CSS
