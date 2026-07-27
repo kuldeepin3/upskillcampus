@@ -1,0 +1,15 @@
+Business Problem
+Farmers often spray pesticides over the entire field, which:
+Increases pesticide usage
+Raises costs
+Harms crops and soil
+Affects the environment
+The objective is to detect only weeds so pesticides can be sprayed selectively.
+ This aligns with the project description of internship document.
+
+ --------------------------------------------------------------------------
+ In this project ill used YOLO(YOU ONLY LOOK ONCE MODEL):
+ Instead of scanning an image multiple times like older algorithms, 
+ YOLO processes the whole image in one forward pass, making it both fast and accurate.
+
+ 
