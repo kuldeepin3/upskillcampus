@@ -7,7 +7,7 @@ This repository contains the final source code and documentation for my Industri
 
 | Project | Live Demo |
 |---------|-----------|
-| 🚦 Smart City Traffic Patterns Forecasting | https://YOUR-TRAFFIC-APP.streamlit.app |
+| 🚦 Smart City Traffic Patterns Forecasting | https://upskillcampus-o3csaxbnjhumnm4zyqufab.streamlit.app/ |
 | 🌱 Crop & Weed Detection using YOLOv8 | https://upskillcampuss.streamlit.app/|
 
 ---
